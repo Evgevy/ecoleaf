@@ -7241,7 +7241,7 @@ button,
   }
 
   .header::before {
-    height: 30px;
+    height: 60px;
   }
 
   .header__center {
