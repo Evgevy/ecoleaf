@@ -8067,7 +8067,7 @@ button,
 
 @media (max-width: 520px) {
   .modals .reg-modal .reg-modal__content {
-    max-width: 300px;
+    max-width: 100%;
     padding: 10px;
   }
 
