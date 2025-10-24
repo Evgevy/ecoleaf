@@ -6121,6 +6121,34 @@ button,
   margin-top: 20px;
 }
 
+.faq .accordion__inner p {
+  margin: 0;
+}
+
+.faq .accordion__inner a {
+  display: inline-block;
+  text-decoration: underline;
+  color: inherit;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq .accordion__inner a:hover {
+  opacity: 0.8;
+}
+
+.faq .accordion__inner button {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq .accordion__inner button:hover {
+  opacity: 0.8;
+}
+
 .faq__info {
   background: rgb(255, 255, 255);
   border-radius: 37px;
