@@ -76,38 +76,107 @@
         </div>
       </header>
       <main>
-        <section class="intro"> 
-          <div class="intro__bg-left"> <img src="img/content/intro-bg-left.png" alt="Капсула для стирки"></div>
-          <div class="intro__bg-right"> <img src="img/content/intro-bg-right.png" alt="Капсула для стирки"></div>
+        <section class="intro-lk"> 
           <div class="container"> 
-            <div class="intro__wrapper"> 
-              <div class="intro__bg-small1"> <img src="img/content/intro-small1.png" alt="Капсула для стирки"></div>
-              <h1 class="intro__title">Барабан фортуны
-                <div class="intro__title-bg"> <img src="img/content/intro-small2.png" alt="Капсула для стирки"></div>
-              </h1>
-              <p class="intro__text">Больше кодов — ближе победа</p>
-              <button class="intro__btn header__btn-reg" type="button" data-open-modal="reg">Участвовать</button>
-              <div class="intro__block">
-                <p class="intro__small-text">С 10 сентября по 10 декабря
-                  <svg width="12" height="12" aria-hidden="true">
-                    <use xlink:href="#el"></use>
-                  </svg>
-                </p>
-                <div class="intro__big-bg"> <img src="img/content/intro-big-bg.png" alt="Стиральная машина с капсулами"></div>
-                <div class="intro__bg-mobile"> <img src="img/content/intro-bg-mobile.png" alt="Стиральная машина с капсулами"></div>
-                <div class="intro__small-text intro__small-text--2">
-                  <p class="intro__small-text2">Покупай капсулы для стирки EcoLeaf и EcoWash <span> Регистрируй коды с упаковки, выигрывай призы каждый месяц!</span></p>
-                  <svg width="12" height="12" aria-hidden="true">
-                    <use xlink:href="#el"></use>
-                  </svg>
+            <div class="intro-lk__wrapper"> 
+              <h1 class="intro-lk__title">Личный кабинет <span>участника</span></h1>
+              <div class="intro-lk__box">
+                <div class="intro-lk__card intro-lk__card--one">
+                  <div class="intro-lk__card-bg"> <img src="img/content/shape.png" alt="Задний фон"></div>
+                  <div class="intro-lk__card-bg-mobile"><img src="img/content/shape-mobile.png" alt="Задний фон"></div>
+                  <p class="intro-lk__subtitle">Твои данные</p>
+                  <div class="intro-lk__bottom"> <span class="intro-lk__name">Мариса</span>
+                    <div class="intro-lk__info"><a class="intro-lk__link" href="tel:+79999999999">+7 999 999 99 99</a><a class="intro-lk__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                      <button class="intro-lk__btn" type="button">Изменить данные</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="intro__bg-small4 intro__bg-small4--mobile"> <img src="img/content/intro-small4.png" alt="Капсула для стирки"></div>
+                <div class="intro-lk__card intro-lk__card--two">
+                  <p class="intro-lk__subtitle">Твоя активность</p>
+                  <ul class="intro-lk__list">
+                    <li class="intro-lk__item"> 
+                      <p>Всего кодов зарегистрировано:</p><span>24</span>
+                    </li>
+                    <li class="intro-lk__item"> 
+                      <p>Шансов на выигрыш в этом месяце:</p><span>24</span>
+                    </li>
+                    <li class="intro-lk__item"> 
+                      <p>Следующий розыгрыш:</p><span>24.04.2024</span>
+                    </li>
+                    <li class="intro-lk__item">
+                      <p class="intro-lk__last">Твои коды участвуют в розыгрыше месяца. Удачи!</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="intro__bg-small4"> <img src="img/content/intro-small4.png" alt="Капсула для стирки"></div>
             </div>
           </div>
         </section>
-        <section class="tape tape--angle-1">
+        <section class="new-code"> 
+          <div class="container"> 
+            <div class="new-code__wrapper"> 
+              <div class="new-code__bg"> <img src="img/content/shape-1.png" alt="Фон блока"></div>
+              <div class="new-code__info"> 
+                <h2 class="new-code__title">Зарегистрировать новый коды</h2>
+                <p class="new-code__text">Введи новый код с голограммы, чтобы увеличить шансы на победу</p><form class="code-form" id="promo-form" autocomplete="off" novalidate>
+<div class="code-input" role="group" aria-label="Код участия">
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+<input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" />
+</div>
+<button type="submit" class="code-btn" id="code-submit" disabled>Добавить код</button>
+</form> 
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="regist"> 
+          <div class="container"> 
+            <div class="regist__wrapper"> 
+              <h2 class="regist__title">Зарегистрированные коды</h2>
+              <div class="regist__table">
+                 <div class="regist__top">
+<div>№</div>
+<div>Код</div>
+<div>Дата регистрации</div>
+<div>Статус участия</div>
+</div>
+<div class="regist__row">
+<div>1</div>
+<div>ХХХХХХХХХХ
+                <p class="regist__row-text">Участвует</p></div>
+<div>01.01.2025</div>
+<div class="regist__green">Участвует</div>
+</div>
+<div class="regist__row">
+<div>2</div>
+<div>ХХХХХХХХХХ
+                <p class="regist__row-text">Участвует</p></div>
+<div>02.01.2025</div>
+<div class="regist__green">Участвует</div>
+</div>
+<div class="regist__row">
+<div>3</div>
+<div>ХХХХХХХХХХ
+                <p class="regist__row-text">Участвует</p></div>
+<div>03.01.2025</div>
+<div class="regist__green">Участвует</div>
+</div>
+<div class="regist__row">
+<div>4</div>
+<div>ХХХХХХХХХХ
+                <p class="regist__row-text">Участвует</p></div>
+<div>04.01.2025</div>
+<div class="regist__green">Участвует</div>
+</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tape tape--angle-2">
           <div class="container"> 
             <div class="tape__wrapper"> 
               <div class="tape__slider"> 
@@ -141,113 +210,51 @@
             </div>
           </div>
         </section>
-        <section class="prank"> 
+        <section class="prize"> 
           <div class="container"> 
-            <div class="prank__wrapper"> 
-              <div class="prank__bg"> <img src="img/content/blob.png" alt="Задний фон"></div>
-              <div class="prank__info">
-                <h2 class="prank__title">Как принять участие <br>в розыгрыше?</h2>
-                <ul class="prank__list"> 
-                  <li class="prank__item prank__item--1"> 
-                    <div class="prank__info">
-                      <p class="prank__text">Покупай капсулы EcoLeaf и EcoWash</p>
-                      <p class="prank__subtext">Узнай, какие <a href="#!">продукты</a> участвуют в розыгрыше и где их купить</p>
-                    </div>
-                    <div class="prank__image"> <img src="img/content/p-image1.png" alt="Капсулы для стирки"></div>
-                  </li>
-                  <li class="prank__item prank__item--2"> 
-                    <div class="prank__image"> <img src="img/content/p-image2.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__image prank__image--mobile"><img src="img/content/p-small-mobile2.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__info">
-                      <p class="prank__text">Ищи код <br>на голограмме</p>
-                      <p class="prank__subtext">На упаковках есть защитная голограмма — разгляди на ней уникальный код</p>
-                    </div>
-                  </li>
-                  <li class="prank__item prank__item--3"> 
-                    <div class="prank__image"> <img src="img/content/p-image3.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__bg5"> <img src="img/content/prank-bg-5.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__info">
-                      <p class="prank__text">Участвуй <br>в розыгрышах</p>
-                      <p class="prank__subtext">Раздаем подарки каждый месяц, а в конце года — разыграем мегаприз. <br><br>Каждый новый код увеличивает шансы на победу</p>
-                      <button class="prank__btn" type="button" data-open-modal="reg">Участвовать</button>
-                    </div>
-                  </li>
-                  <li class="prank__item prank__item--4">
-                    <div class="prank__info">
-                      <p class="prank__text">Регистрируйся <br>на сайте</p>
-                      <p class="prank__subtext"><a href="#!">Зарегистрируйся</a> в личном кабинете: укажи имя, почту <br>и телефон. Так мы сможем связаться в случае выигрыша</p>
-                    </div>
-                    <div class="prank__image"> <img src="img/content/p-image4.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__bg1"> <img src="img/content/p-small1.png" alt="Капсула для стирки"></div>
-                    <div class="prank__bg2"> <img src="img/content/p-small2.png" alt="Капсула для стирки"></div>
-                    <div class="prank__bg3"> <img src="img/content/p-small3.png" alt="Капсула для стирки"></div>
-                    <div class="prank__bg4"><img src="img/content/prank-bg4.png" alt="Капсула для стирки"></div>
-                  </li>
-                  <li class="prank__item prank__item--5"> 
-                    <div class="prank__image1"> <img src="img/content/p-small4.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__image2"> <img src="img/content/p-small5.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__image3"> <img src="img/content/p-small6.png" alt="Капсулы для стирки"></div>
-                    <div class="prank__info">
-                      <p class="prank__text">Введи код <br>с голограммы</p>
-                      <p class="prank__subtext">Проверим подлинность продукта и зарегистрируем твой код</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="wash"> 
-          <div class="container"> 
-            <div class="wash__wrapper"> 
-              <h2 class="wash__title">Настирай <br><span>на подарок</span></h2>
-              <div class="wash__top"> 
-                <p class="wash__text">Каждый месяц разыгрываем ХХ призов среди тех, кто зарегистрировал код</p>
-                <div class="wash__buttons"> 
-                  <button class="swiper-button-prev wash-prev" type="button">
-                    <svg width="60" height="60" aria-hidden="true">
-                      <use xlink:href="#wash-prev"></use>
-                    </svg>
-                  </button>
-                  <button class="swiper-button-next wash-next" type="button">
-                    <svg width="60" height="60" aria-hidden="true">
-                      <use xlink:href="#wash-prev"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="wash__slider swiper" data-slider="wash"> 
-                <div class="wash__list swiper-wrapper"> 
-                  <div class="swiper-slide"> 
-                    <p class="wash__slide-text">Полугодовой <br>запас капсул <br>EcoLeaf и EcoWash</p>
-                    <div class="wash__image"> <img src="img/content/slide1.png" alt="Капсулы для стирки"></div><span>
-                      10 призов<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"/>
-</svg></span>
+            <div class="prize__wrapper"> 
+              <ul class="prize__list"> 
+                <li class="prize__item"> 
+                  <div class="prize__image"> <img src="img/content/prize1.png" alt="Приз в розыгрыше"></div>
+                  <div class="prize__info">
+                    <p class="prize__name">Полугодовой запас капсул EcoLeaf <br>и EcoWash</p><span> 10 призов 
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"></circle>
+</svg>
+</span>
                   </div>
-                  <div class="swiper-slide"> 
-                    <p class="wash__slide-text">Годовой запас <br>капсул EcoLeaf <br>и EcoWash</p>
-                    <div class="wash__image"> <img src="img/content/slide2.png" alt="Капсулы для стирки"></div><span>
-                      10 призов<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"/>
-</svg></span>
+                </li>
+                <li class="prize__item"> 
+                  <div class="prize__image"> <img src="img/content/prize2.png" alt="Приз в розыгрыше"></div>
+                  <div class="prize__info">
+                    <p class="prize__name">Годовой запас <br>капсул EcoLeaf и EcoWash</p><span> 10 призов 
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"></circle>
+</svg>
+</span>
                   </div>
-                  <div class="swiper-slide"> 
-                    <p class="wash__slide-text">Смарт-часы</p>
-                    <div class="wash__image"> <img src="img/content/slide3.png" alt="Капсулы для стирки"></div><span>
-                      10 призов<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"/>
-</svg></span>
+                </li>
+                <li class="prize__item"> 
+                  <div class="prize__image"> <img src="img/content/prize3.png" alt="Приз в розыгрыше"></div>
+                  <div class="prize__info">
+                    <p class="prize__name">Кухонные весы</p><span> 10 призов
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"></circle>
+</svg>
+</span>
                   </div>
-                  <div class="swiper-slide"> 
-                    <p class="wash__slide-text">Кухонные весы</p>
-                    <div class="wash__image"> <img src="img/content/slide4.png" alt="Капсулы для стирки"></div><span>
-                      10 призов<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"/>
-</svg></span>
+                </li>
+                <li class="prize__item"> 
+                  <div class="prize__image"> <img src="img/content/prize4.png" alt="Приз в розыгрыше"></div>
+                  <div class="prize__info">
+                    <p class="prize__name">Смарт-часы</p><span> 10 призов
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6.17969" r="6" fill="#3C2B8B"></circle>
+</svg>
+</span>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -297,7 +304,7 @@
               <div class="mega__info"> 
                 <h2 class="mega__title">МЕГАПРИЗ</h2>
                 <p class="mega__text">который мы раскроем позже</p>
-                <p class="mega__text mega__text--mobile">Больше кодов — ближе победа</p><span style="padding: 5px 10px 10px">Поверь — ты захочешь побороться</span><span class="mega__span" style="padding: 5px 10px 10px">Поверь — ты захочешь побороться</span>
+                <p class="mega__text mega__text--mobile">Больше кодов — ближе победа</p><span style="padding: 15px 20px 20px">Чем больше кодов — тем выше шанс <br>сорвать главный приз года!</span><span class="mega__span" style="padding: 8px 15px 10px">Поверь – ты хочешь побороться</span>
                 <div class="mega__image"> <img src="img/content/mega.png" alt="Подарок"></div>
               </div>
             </div>
@@ -337,244 +344,15 @@
             </div>
           </section>
         </section>
-        <section class="chance"> 
+        <section class="result"> 
           <div class="container"> 
-            <div class="chance__wrapper">
-              <h2 class="chance__title">Где купить свой шанс <br><span>на победу?</span></h2>
-              <h2 class="chance__title chance__title--mobile">Где купить свой <br><span>шанс на победу?</span></h2>
-              <div class="chance__buttons"> 
-                <button class="swiper-button-prev chance-prev" type="button">
-                  <svg width="60" height="60" aria-hidden="true">
-                    <use xlink:href="#wash-prev"></use>
-                  </svg>
-                </button>
-                <button class="swiper-button-next chance-next" type="button">
-                  <svg width="60" height="60" aria-hidden="true">
-                    <use xlink:href="#wash-prev"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="chance__bg"> <img src="img/sprite/elipse.svg"></div>
-              <div class="chance__box">
-                <button class="swiper-button-prev chance-prev" type="button">
-                  <svg width="60" height="60" aria-hidden="true">
-                    <use xlink:href="#wash-prev"></use>
-                  </svg>
-                </button>
-                <div class="chance__slider swiper" data-slider="chance">
-                  <div class="swiper-wrapper"> 
-                    <div class="swiper-slide"> <img src="img/content/chance1.png" alt="Упаковка капсул для стирки"></div>
-                    <div class="swiper-slide"> <img src="img/content/chance2.png" alt="Упаковка капсул для стирки"></div>
-                    <div class="swiper-slide"> <img src="img/content/chance3.png" alt="Упаковка капсул для стирки"></div>
-                  </div>
-                </div>
-                <button class="swiper-button-next chance-next" type="button">
-                  <svg width="60" height="60" aria-hidden="true">
-                    <use xlink:href="#wash-prev"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="chance__logo-box"> 
-                <div class="chance__logo"><img src="img/content/chance-logo1.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo2.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo3.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo4.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo5.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo6.png" alt="Логотип партнеров"></div>
-                <div class="chance__logo"><img src="img/content/chance-logo7.png" alt="Логотип партнеров"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="faq"> 
-          <div class="container"> 
-            <div class="faq__wrapper"> 
-              <div class="faq__bg1"> <img src="img/content/faq-1.png" alt="Капсула для стирки"></div>
-              <div class="faq__bg2"> <img src="img/content/faq-2.png" alt="Капсула для стирки"></div>
-              <div class="faq__m"> <img src="img/content/faq-m.png" alt="Капсула для стирки"></div>
-              <div class="faq__bg3"> <img src="img/content/faq-3.png" alt="Капсула для стирки"></div>
-              <h2 class="faq__title">Стираем <br>сомнения</h2>
-              <p class="faq__text">Отвечаем на частые вопросы</p><div class="accordion" data-accordion="parent">
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Где продаются капсулы EcoLeaf и EcoWash?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner">На маркетплейсах Wildberries, Ozon, Яндекс Маркет, Магнит Маркет, Сбер Маркет. В сервисе доставки Яндекс Лавка и в розничной сети магазинов Светофор.</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Могу ли я участвовать в розыгрыше, если куплю капсулы на маркетплейсах?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner">Да, если на упаковке будет специальная наклейка с кодом для регистрации.
-</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Можно ввести несколько кодов?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner">  Нужно! Чем больше кодов — тем больше шансов на победу.</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Сколько длится розыгрыш?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> Период совершения покупок и регистрации кодов с ХХ.ХХ.2025 г. по ХХ.ХХ.2025 г.</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Как будут подводиться итоги?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> 
-              <ol> 
-                <li>1. Каждый месяц мы собираем зарегистрированные коды и присваиваем каждому участнику порядковый номер.</li>
-                <li>2. Затем запускаем генератор случайных чисел — он выбирает ХХ счастливчиков, которые получают призы месяца.</li>
-                <li>3. Все честно и прозрачно:
-                  <p>-видео розыгрыша публикуем в нашем Telegram-канале,</p>
-                  <p>-список победителей выкладываем там же и на этой странице.</p>
-                </li>
-              </ol></div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Не могу зарегистрировать код. Что мне делать?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> Если возникли сложности с регистрацией кода или появились дополнительные вопросы, можно связаться с организаторами акции через кнопку обратной связи <button type="button" data-open-modal="res">«Задать вопрос»</button></div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Как происходит вручение призов?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> Напишем на электронную почту, указанную при регистрации, и согласуем все нюансы</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Какая продукция участвует в акции?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> Вся продукция торговой марки EcoLeaf и EcoWash со специальной голограммой, где указан код для регистрации</div>
-</div>
-</div>
-<div class="accordion__item" data-accordion="element">
-<button class="accordion__button" data-accordion="button" type="button">
-<span>Возможно ли вместо приза получить деньги или поменять приз на другой?</span>
-<svg class="accordion__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect class="line-horizontal" x="0" y="18" width="38" height="2" fill="#3C2B8B" />
-<rect class="line-vertical" x="18" y="0" width="2" height="38" fill="#3C2B8B" />
-</svg>
-</button>
-<div class="accordion__content" data-accordion="content">
-<div class="accordion__inner"> Нет, по <a href="#!">правилам акции</a> приз нельзя заменить или обменять на деньги</div>
-</div>
-</div>
-</div>
-              <div class="faq__info"> 
-                <div class="faq__text-block">
-                  <p class="faq__b-text">Нет нужной информации? </p><span>Задай вопросы, и мы ответим</span><span>Задай вопросы</span>
-                </div>
-                <button class="faq__btn" type="button" data-open-modal="res">Задать вопрос</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="tape tape--angle-2">
-          <div class="container"> 
-            <div class="tape__wrapper"> 
-              <div class="tape__slider"> 
-                <div class="tape__slider-content">
-                  <div class="swiper-slide"> 
-                    <p>выигрывай</p>
-                    <svg width="8" height="8" aria-hidden="true">
-                      <use xlink:href="#tape"></use>
-                    </svg>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <p>Регистрируй</p>
-                    <svg width="8" height="8" aria-hidden="true">
-                      <use xlink:href="#tape"></use>
-                    </svg>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <p>Стирай</p>
-                    <svg width="8" height="8" aria-hidden="true">
-                      <use xlink:href="#tape"></use>
-                    </svg>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <p>Крути</p>
-                    <svg width="8" height="8" aria-hidden="true">
-                      <use xlink:href="#tape"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="drum"> 
-          <div class="container"> 
-            <div class="drum__wrapper"> 
-              <div class="drum__bg"> <img src="img/content/drum-bg.png" alt="Задний фон"></div>
-              <div class="drum__bg-mobile"> <img src="img/content/drum-bg-mobile.png" alt="Задний фон"></div>
-              <div class="drum__small1"> <img src="img/content/mega-small1.png" alt="Капсула для стирки"></div>
-              <div class="drum__small2"> <img src="img/content/mega-small2.png" alt="Капсула для стирки"></div>
-              <div class="drum__small3"> <img src="img/content/mega-small3.png" alt="Капсула для стирки"></div>
-              <div class="drum__small4"> <img src="img/content/mega-small4.png" alt="Капсула для стирки"></div>
-              <div class="drum__info"> 
-                <h2 class="drum__title">Крути барабан <br>фортуны</h2>
-                <p class="drum__text">с ХХ сентября по ХХ декабря </p>
-                <div class="drum__bottom"> 
-                  <div class="drum__image"> <img src="img/content/drum1.png" alt="Упаковка с капсулами для стирки"></div>
-                  <div class="drum__info-block"> 
-                    <p class="drum__info-text">Найди код на голограмме и участвуй в розыгрыше каждый месяц</p>
-                    <button class="drum__btn" type="button" data-open-modal="reg">Участвовать</button>
-                  </div>
-                </div>
+            <div class="result__wrapper"> 
+              <div class="result__info"> 
+                <h2 class="result__title">Результаты ежемесячных <br><span>розыгрышей</span></h2>
+                <p class="result__text">публикуем на специальной странице и в нашем Telegram-канале</p>
+                <div class="result__links"> <a class="result__link" href="#!">Список победителей</a><a class="result__link" href="#!">Telegram-канал</a></div>
+                <p class="result__subtitle">Остались вопросы? <span>Задавай!</span></p>
+                <button class="result__btn" type="button" data-open-modal="res">Задать вопрос</button>
               </div>
             </div>
           </div>
