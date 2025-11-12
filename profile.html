@@ -118,16 +118,14 @@
               <div class="new-code__bg"> <img src="img/content/shape-1.png" alt="Фон блока"></div>
               <div class="new-code__info"> 
                 <h2 class="new-code__title">Зарегистрировать новый код</h2>
-                <p class="new-code__text">Введи новый код с голограммы, чтобы увеличить шансы на победу</p><form class="code-form" id="promo-form" autocomplete="off" novalidate>
-<div class="code-input" role="group" aria-label="Код участия">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off">
-                <input class="char-input" type="text" maxlength="1" placeholder="X" inputmode="text" pattern="[A-Za-z0-9]*" autocomplete="off"></div>
-<button type="submit" class="code-btn" id="code-submit" disabled>Добавить код</button>
-</form> 
+                <p class="new-code__text">Введи новый код с голограммы, чтобы увеличить шансы на победу</p><form method="post" id="code-form">
+                <div class="new-code__form">
+                  <div class="custom-input">
+                    <label>
+                      <input type="text" name="code" placeholder="X X X X X X">
+                    </label>
+                  </div><button type="submit" class="code-btn" id="code-submit" disabled>Добавить код</button>
+                </div></form> 
               </div>
             </div>
           </div>
