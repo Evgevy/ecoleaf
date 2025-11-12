@@ -6973,17 +6973,17 @@ button,
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  color: #000;
   border: none;
   outline: none;
-  background: transparent;
+  background: #fff;
   -webkit-transition: border-color 0.15s, color 0.15s;
   -o-transition: border-color 0.15s, color 0.15s;
   transition: border-color 0.15s, color 0.15s;
-  caret-color: #273b7a;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-appearance: none;
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 .new-code .char-input::-webkit-input-placeholder {
