@@ -4303,6 +4303,201 @@ button,
   transform: rotate(4deg);
 }
 
+.modals .congrat-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modals .congrat-modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modals .congrat-modal .congrat-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.modals .congrat-modal .congrat-modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 790px;
+  width: 100%;
+}
+
+.modals .congrat-modal .congrat-modal__box {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 40px;
+  padding: 20px 20px 30px;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modals .congrat-modal .congrat-modal__bg1,
+.modals .congrat-modal .congrat-modal__bg2,
+.modals .congrat-modal .congrat-modal__bg3,
+.modals .congrat-modal .congrat-modal__bg4 {
+  position: absolute;
+  z-index: -1;
+}
+
+.modals .congrat-modal .congrat-modal__bg1 {
+  width: 100px;
+  height: 80px;
+  top: 40px;
+  left: 75px;
+}
+
+.modals .congrat-modal .congrat-modal__bg2 {
+  width: 120px;
+  height: 120px;
+  bottom: 70px;
+  left: 0;
+}
+
+.modals .congrat-modal .congrat-modal__bg3 {
+  width: 170px;
+  height: 150px;
+  top: 0;
+  right: 0;
+}
+
+.modals .congrat-modal .congrat-modal__bg4 {
+  width: 180px;
+  height: 140px;
+  right: 62px;
+  bottom: 65px;
+}
+
+.modals .congrat-modal .congrat-modal__bg1 img,
+.modals .congrat-modal .congrat-modal__bg2 img,
+.modals .congrat-modal .congrat-modal__bg3 img,
+.modals .congrat-modal .congrat-modal__bg4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.modals .congrat-modal .congrat-modal__title {
+  font-family: Coolvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 60px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(107, 82, 221);
+  margin: 0 0 15px;
+}
+
+.modals .congrat-modal .congrat-modal__text {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24.8px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(60, 43, 139);
+  margin: 0 0 40px;
+}
+
+.modals .congrat-modal .congrat-modal__spans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.modals .congrat-modal .congrat-modal__span1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28.48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(60, 43, 139);
+}
+
+.modals .congrat-modal .congrat-modal__span2 {
+  background: rgb(60, 43, 139);
+  border-radius: 15px;
+  padding: 4px 6px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28.48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(242, 242, 242);
+}
+
+.modals .congrat-modal .congrat-modal__subtext {
+  font-family: Inter;
+  font-size: 11px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(60, 43, 139);
+  margin: 0 0 30px;
+}
+
+.modals .congrat-modal .congrat-modal__bottom {
+  background: rgb(107, 82, 221);
+  border-radius: 100px;
+  padding: 15px 20px 20px;
+  font-family: Coolvetica;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.modals .congrat-modal .congrat-modal__bottom br.one {
+  display: none;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8172,6 +8367,12 @@ button,
   }
 }
 
+@media (max-width: 820px) {
+  .modals .congrat-modal .congrat-modal__content {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .prank__item--3 .prank__image {
     width: 350px;
@@ -8201,6 +8402,40 @@ button,
 
   .header__btn-reg {
     max-width: 100%;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg1 {
+    left: 0;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg3 {
+    width: 100px;
+    height: 100px;
+    right: 20px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg4 {
+    width: 140px;
+    height: 100px;
+    right: 20px;
+  }
+
+  .modals .congrat-modal .congrat-modal__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .modals .congrat-modal .congrat-modal__text {
+    font-size: 16px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bottom {
+    font-size: 21px;
   }
 
   .intro__small-text {
@@ -8910,6 +9145,56 @@ button,
 
   .modals .cookie-modal {
     max-width: 320px;
+  }
+
+  .modals .congrat-modal .congrat-modal__box {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg1 {
+    width: 80px;
+    height: 70px;
+    top: 80px;
+    left: -10px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg2 {
+    display: none;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg3 {
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    right: 10px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bg4 {
+    display: none;
+  }
+
+  .modals .congrat-modal .congrat-modal__title {
+    font-size: 30px;
+  }
+
+  .modals .congrat-modal .congrat-modal__text {
+    line-height: 120%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bottom {
+    border-radius: 10px;
+    font-size: 18px;
+    max-width: 100%;
+    width: 100%;
+    line-height: 120%;
+    padding: 20px 10px;
+  }
+
+  .modals .congrat-modal .congrat-modal__bottom br.one {
+    display: block;
   }
 
   .intro__title {
